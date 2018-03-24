@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="IE Test(failed)" parallel="tests">
+    <parameter name="Browser" value="IE"/>
+    <classes>
+      <class name="tests.TestIRCTC">
+        <methods>
+          <include name="register1" invocation-numbers="0 1"/>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.TestIRCTC -->
+    </classes>
+  </test> <!-- IE Test(failed) -->
+  <test name="Chrome Test(failed)" parallel="tests">
+    <parameter name="Browser" value="C"/>
+    <classes>
+      <class name="tests.TestIRCTC">
+        <methods>
+          <include name="register1" invocation-numbers="0 1"/>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.TestIRCTC -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test name="Firefox Test(failed)" parallel="tests">
+    <parameter name="Browser" value="FF"/>
+    <classes>
+      <class name="tests.TestIRCTC">
+        <methods>
+          <include name="register1" invocation-numbers="0 1"/>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- tests.TestIRCTC -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
